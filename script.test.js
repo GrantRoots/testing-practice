@@ -1,5 +1,5 @@
-import capitalize from './script.js'
+import { capitalize } from './script.js'
 
 test('first test', () => {
-    expect(capitalize('apple')).toBe(Apple)
+    expect(capitalize('apple')).toBe('Apple')
 })
