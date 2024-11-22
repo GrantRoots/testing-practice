@@ -58,4 +58,38 @@ function caesarCipher(string, shiftFactor) {
     return shiftedString
 }
 
-export { capitalize, reverseString, calculator, caesarCipher }
+function analyzeArray(array) {
+    function average(array) {
+        let total = 0
+        array.forEach(num => {
+            total += num
+        })
+        return total / array.length
+    }
+    function min(array) {
+        let minValue = array[0]
+        array.forEach(num => {
+            if (num < minValue) {
+                minValue = num
+            }
+        })
+        return minValue
+    }
+    function max() {
+        let maxValue = array[0]
+        array.forEach(num => {
+            if (num > maxValue) {
+                maxValue = num
+            }
+        })
+        return maxValue
+    }
+    return {
+        average: average(array),
+        min: min(array),
+        max: max(array),
+        length: array.length,
+    }
+}
+
+export { capitalize, reverseString, calculator, caesarCipher, analyzeArray }
