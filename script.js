@@ -3,9 +3,16 @@ function capitalize(string) {
 }
 
 function reverseString(string) {
-    let splitString = string.split('')
-    let reversed = splitString.reverse()
-    return reversed.join('')
+    return string.split('').reverse().join('')
+}
+
+const calculator = {
+    add(a, b) {
+        return a + b
+    },
+    subtract(a, b) {
+        return a - b
+    }
 }
 
 export { capitalize, reverseString }
